@@ -1,0 +1,360 @@
+@charset "UTF-8";
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 300px;
+  height: 225px;
+  left: 60%;
+  top: 55%;
+  padding: 0px 20px 30px 20px;
+  overflow: hidden;
+  background-color: #315686;
+  color: #a8b8cc;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 20px 25px 15px -15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+}
+.namecard hr {
+  border-color: #a8b8cc;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.namecard h2 {
+  font-size: 25px;
+}
+.namecard span {
+  font-size: 18px;
+}
+.namecard h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.namecard:hover {
+  transform: translate(-50px, -50px);
+  box-shadow: -20px -25px 15px -15px rgba(0, 0, 0, 0.5);
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -50;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #33b2de;
+  animation: back 8s infinite;
+}
+@keyframes falling {
+  0%,
+    100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  0% {
+    transform: translate(0px, 100%);
+  }
+  100% {
+    transform: translate(100%, 0px);
+  }
+}
+.allbub [class*="bub"] {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  animation: falling 2s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 69.2151200841%;
+  top: -9.7685529003%;
+  animation-delay: -0.1s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 41.3976001372%;
+  top: 12.2298753857%;
+  animation-delay: -0.2s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 56.5276862632%;
+  top: 22.8819276898%;
+  animation-delay: -0.3s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 17.6295766512%;
+  top: 40.2226968612%;
+  animation-delay: -0.4s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 4.2864568835%;
+  top: 70.191066197%;
+  animation-delay: -0.5s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 3.9880782338%;
+  top: 22.7422066004%;
+  animation-delay: -0.6s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 52.5025441707%;
+  top: 37.3446215166%;
+  animation-delay: -0.7s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 25.7236369791%;
+  top: 82.0600181012%;
+  animation-delay: -0.8s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 85.4640833026%;
+  top: 69.1397199249%;
+  animation-delay: -0.9s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 80.2494150042%;
+  top: 57.6405960926%;
+  animation-delay: -1s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 19.1529457994%;
+  top: 39.8223443244%;
+  animation-delay: -1.1s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 6.8306089194%;
+  top: 25.4019807216%;
+  animation-delay: -1.2s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 40.4485564163%;
+  top: 1.1104677435%;
+  animation-delay: -1.3s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 18.9160305166%;
+  top: 3.6574919842%;
+  animation-delay: -1.4s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 8.2231223195%;
+  top: 48.9589794416%;
+  animation-delay: -1.5s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 9.5707396191%;
+  top: 17.0738726773%;
+  animation-delay: -1.6s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 61.7179662587%;
+  top: 73.5074502725%;
+  animation-delay: -1.7s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 0.702378047%;
+  top: 58.9924014806%;
+  animation-delay: -1.8s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 47.4331907828%;
+  top: 25.7640172566%;
+  animation-delay: -1.9s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 47.2616165364%;
+  top: 25.7095305186%;
+  animation-delay: -2s;
+}
+
+.fish1 {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  margin: 150px 200px 75px 1100px;
+  animation-name: fishmove;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes fishmove {
+  0% {
+    left: 800px;
+  }
+  100% {
+    left: -1500px;
+  }
+}
+.f1 {
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  border-bottom: 100px solid lavender;
+  border-right: 0px solid transparent;
+  border-left: 100px solid transparent;
+}
+
+.f2 {
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  border-top: 100px solid lavender;
+  border-right: 0px solid transparent;
+  border-left: 100px solid transparent;
+}
+
+.f3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #848484;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+.fish2 {
+  background-color: #5ab93b;
+  position: absolute;
+  margin: 450px 150px;
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+  transition: all 5s cubic-bezier(0.83, 0, 0.17, 1) 0.2s;
+}
+
+.fish2:hover {
+  transform: translate(800px, -600px);
+}
+
+.f4 {
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  border-bottom: 20px solid #5ab93b;
+  border-right: 0px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.f5 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.fish3 {
+  background-color: #f9acde;
+  position: absolute;
+  margin: 50px 450px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+  animation-name: fishmove2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes fishmove2 {
+  0% {
+    bottom: -150px;
+  }
+  50% {
+    transform: rotate(-500deg);
+  }
+  100% {
+    bottom: 800px;
+  }
+}
+.f6 {
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  border-bottom: 10px solid #f9acde;
+  border-right: 0px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.f7 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #744665;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+.fish4 {
+  background-color: #8140bc;
+  position: absolute;
+  margin: 50px 1000px;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  animation-name: fishmove3;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-delay: 5s;
+}
+
+@keyframes fishmove3 {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: -1200px;
+  }
+}
+.f8 {
+  background-color: #8140bc;
+  position: absolute;
+  margin: -20px 70px;
+  width: 30px;
+  height: 30px;
+}
+
+.f9 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffd0c6;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
